@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int firstInput;
+    int secondInput;
+
+    cin >> firstInput >> secondInput;
+
+    if(firstInput > secondInput){
+    cout <<"Second integer can't be less than the first." <<endl;
+    }else{
+    while (firstInput <= secondInput){
+    cout <<firstInput << " ";
+    firstInput = firstInput + 5;
+    }
+    cout <<endl;
+    }
+
+    return 0;
+}
